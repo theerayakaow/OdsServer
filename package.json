@@ -1,0 +1,29 @@
+{
+  "name": "server-mobile-frontned-test",
+  "version": "1.0.0",
+  "description": "mock backend server for mobile test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Salary-Hero/server-mobile-frontned-test.git"
+  },
+  "author": "nutchapon@salary-hero.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Salary-Hero/server-mobile-frontned-test/issues"
+  },
+  "homepage": "https://github.com/Salary-Hero/server-mobile-frontned-test#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.4"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "otp_entries": [
+    {
+      "phone_number": "0928078046",
+      "last_sent_at": "2025-04-20T21:16:30.159Z",
+      "otp_ref_id": "REF-732710",
+      "otp_code": "899627",
+      "otp_expire_at": "2025-04-20T21:21:30.159Z",
+      "is_verified": true
+    },
+    {
+      "phone_number": "0928078046",
+      "last_sent_at": "2025-04-20T21:19:55.590Z",
+      "otp_ref_id": "REF-137846",
+      "otp_code": "580524",
+      "otp_expire_at": "2025-04-20T21:24:55.590Z",
+      "is_verified": true
+    },
+    {
+      "phone_number": "0928078046",
+      "last_sent_at": "2025-04-20T21:20:48.616Z",
+      "otp_ref_id": "REF-497506",
+      "otp_code": "765376",
+      "otp_expire_at": "2025-04-20T21:25:48.616Z",
+      "is_verified": true
+    }
+  ]
+}

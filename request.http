@@ -1,0 +1,29 @@
+### to signin
+POST http://localhost:3000/api/v1/signin 
+Content-Type: application/json
+
+{
+    "phone": "0800000000"
+}
+
+
+### to get user profile
+GET http://localhost:3000/api/v1/user/profile 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyVWlkIjoiam9obl91aWQiLCJwaG9uZSI6IjA4MDAwMDAwMDAiLCJpYXQiOjE2NzcxMTkzODIsImV4cCI6MTY3NzExOTU2Mn0.BimGTjLici9sDciLtZfSt6MuWQFAq01spZSAzjzX7Y4
+
+
+### to get user transactions
+GET http://localhost:3000/api/v1/user/transactions 
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyVWlkIjoiam9obl91aWQiLCJwaG9uZSI6IjA4MDAwMDAwMDAiLCJpYXQiOjE2NzcxMTkzODIsImV4cCI6MTY3NzExOTU2Mn0.BimGTjLici9sDciLtZfSt6MuWQFAq01spZSAzjzX7Y4
+
+
+### to make withdraw request
+POST http://localhost:3000/api/v1/user/withdraw
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyVWlkIjoiam9obl91aWQiLCJwaG9uZSI6IjA4MDAwMDAwMDAiLCJpYXQiOjE2NzcxMTkzODIsImV4cCI6MTY3NzExOTU2Mn0.BimGTjLici9sDciLtZfSt6MuWQFAq01spZSAzjzX7Y4
+
+{
+    "amount": "5000"
+}

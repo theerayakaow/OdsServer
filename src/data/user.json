@@ -1,0 +1,14 @@
+{
+  "john_uid": {
+    "uid": "john_uid",
+    "email": "john@gmail.com",
+    "firstname": "john",
+    "lastname": "lewis"
+  },
+  "serena_uid": {
+    "uid": "serena_uid",
+    "email": "serena@gmail.com",
+    "firstname": "serena",
+    "lastname": "nissan"
+  }
+}
