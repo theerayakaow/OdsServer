@@ -1,10 +1,3 @@
-แน่นอน! นี่คือ `README.md` ของฝั่ง **Backend Server** แบบจัดเต็ม รวม `Getting Started` ไว้ด้วยเรียบร้อย:
-
----
-
-### 📄 `README.md` (สำหรับ Backend)
-
-````markdown
 # 🧪 On-Demand Salary - Mock Backend API
 
 This project provides mock APIs to support frontend mobile app development and testing.
@@ -17,25 +10,20 @@ This project provides mock APIs to support frontend mobile app development and t
 
 ### 1. Clone the project
 
-```bash
 git clone https://github.com/your-username/on-demand-server.git
 cd on-demand-server
-```
-````
 
 ### 2. Install dependencies
 
-```bash
 npm install
-```
 
 ### 3. Start the server
 
-```bash
 npm run dev
+
 # or
+
 node index.js
-```
 
 > The server will run at: `http://localhost:3000`
 
