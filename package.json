@@ -1,5 +1,5 @@
 {
-  "name": "server-mobile-frontned-test",
+  "name": "ods-server",
   "version": "1.0.0",
   "description": "mock backend server for mobile test",
   "main": "index.js",
