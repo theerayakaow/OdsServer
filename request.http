@@ -1,29 +1,37 @@
-### to signin
-POST http://localhost:3000/api/v1/signin 
+### Request OTP
+POST http://localhost:3000/api/v1/request-otp
 Content-Type: application/json
-
 {
-    "phone": "0800000000"
+  "phone": "0800000000"
 }
 
-
-### to get user profile
-GET http://localhost:3000/api/v1/user/profile 
+### Get OTP Info
+POST http://localhost:3000/api/v1/otp-info
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyVWlkIjoiam9obl91aWQiLCJwaG9uZSI6IjA4MDAwMDAwMDAiLCJpYXQiOjE2NzcxMTkzODIsImV4cCI6MTY3NzExOTU2Mn0.BimGTjLici9sDciLtZfSt6MuWQFAq01spZSAzjzX7Y4
-
-
-### to get user transactions
-GET http://localhost:3000/api/v1/user/transactions 
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyVWlkIjoiam9obl91aWQiLCJwaG9uZSI6IjA4MDAwMDAwMDAiLCJpYXQiOjE2NzcxMTkzODIsImV4cCI6MTY3NzExOTU2Mn0.BimGTjLici9sDciLtZfSt6MuWQFAq01spZSAzjzX7Y4
-
-
-### to make withdraw request
-POST http://localhost:3000/api/v1/user/withdraw
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyVWlkIjoiam9obl91aWQiLCJwaG9uZSI6IjA4MDAwMDAwMDAiLCJpYXQiOjE2NzcxMTkzODIsImV4cCI6MTY3NzExOTU2Mn0.BimGTjLici9sDciLtZfSt6MuWQFAq01spZSAzjzX7Y4
-
 {
-    "amount": "5000"
+  "phone": "0800000000"
+}
+
+### Verify OTP
+POST http://localhost:3000/api/v1/verify-otp
+Content-Type: application/json
+{
+  "phone": "0800000000",
+  "otp": "123456"
+}
+
+### Get User Profile
+GET http://localhost:3000/api/v1/user/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyVWlkIjoiam9obl91aWQiLCJwaG9uZSI6IjA4MDAwMDAwMDAiLCJpYXQiOjE3NDUxODY4NzcsImV4cCI6MTc0NTE4NzE3N30.vaEcl1P75TpJSYFLwBqw0UfGePyTbSqB6QVQhAUFJPk
+
+### Get User Transactions
+GET http://localhost:3000/api/v1/user/transactions
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyVWlkIjoiam9obl91aWQiLCJwaG9uZSI6IjA4MDAwMDAwMDAiLCJpYXQiOjE3NDUxODY4NzcsImV4cCI6MTc0NTE4NzE3N30.vaEcl1P75TpJSYFLwBqw0UfGePyTbSqB6QVQhAUFJPk
+
+### Make Withdraw Request
+POST http://localhost:3000/api/v1/user/withdraw
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyVWlkIjoiam9obl91aWQiLCJwaG9uZSI6IjA4MDAwMDAwMDAiLCJpYXQiOjE3NDUxODY4NzcsImV4cCI6MTc0NTE4NzE3N30.vaEcl1P75TpJSYFLwBqw0UfGePyTbSqB6QVQhAUFJPk
+Content-Type: application/json
+{
+  "amount": 5000
 }

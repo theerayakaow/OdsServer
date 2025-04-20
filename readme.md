@@ -1,28 +1,32 @@
 ### Backend Server For Mobile Frontend Testing
 
-This is documentation for api list that using on mobile frontend test
-
-### How to use request.http
-
-- install REST Client on vscode extension.
-- start up server.
-- open _request.http_ file.
-- send request to see response.
-
-### API Lists Description
+This project provides mock APIs to support frontend mobile app development and testing.
 
 ---
 
-| Method | endpoint                           | description                      |
-| ------ | ---------------------------------- | -------------------------------- |
-| POST:  | /api/v1/signin                     | to signin and get access token   |
-| GET:   | /api/v1/user/:user_id/profile      | to get user profile detail       |
-| GET:   | /api/v1/user/:user_id/transactions | to get user transactions history |
-| POST:  | /api/v1/user/:user_id/withdraw     | to submit withdraw request       |
+### How to use `request.http`
 
-### Hint
+1. Install **REST Client** extension on VS Code.
+2. Start the backend server.
+3. Open the `_request.http_` file.
+4. Click **"Send Request"** above each block to test.
 
-- for detect first time signin you can use your phone number payload which return in token payload
+---
+
+### API List & Description
+
+| Method | Endpoint                    | Description                       |
+| ------ | --------------------------- | --------------------------------- |
+| POST   | `/api/v1/request-otp`       | Request OTP by phone number       |
+| POST   | `/api/v1/otp-info`          | Get current OTP status info       |
+| POST   | `/api/v1/verify-otp`        | Submit OTP for verification       |
+| GET    | `/api/v1/user/profile`      | Get user profile (requires token) |
+| GET    | `/api/v1/user/transactions` | Get user transaction history      |
+| POST   | `/api/v1/user/withdraw`     | Submit withdrawal request         |
+
+**🔐 All `/user/*` endpoints require `Authorization: Bearer <token>`**
+
+---
 
 if you have any question feel free to asking us nutchapon@salary-hero.com
 
