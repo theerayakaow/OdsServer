@@ -1,19 +1,56 @@
-### Backend Server For Mobile Frontend Testing
+แน่นอน! นี่คือ `README.md` ของฝั่ง **Backend Server** แบบจัดเต็ม รวม `Getting Started` ไว้ด้วยเรียบร้อย:
+
+---
+
+### 📄 `README.md` (สำหรับ Backend)
+
+````markdown
+# 🧪 On-Demand Salary - Mock Backend API
 
 This project provides mock APIs to support frontend mobile app development and testing.
 
----
-
-### How to use `request.http`
-
-1. Install **REST Client** extension on VS Code.
-2. Start the backend server.
-3. Open the `_request.http_` file.
-4. Click **"Send Request"** above each block to test.
+> Used for simulating features like OTP verification, viewing profile, checking available balance, and withdrawal requests.
 
 ---
 
-### API List & Description
+## 🚀 Getting Started
+
+### 1. Clone the project
+
+```bash
+git clone https://github.com/your-username/on-demand-server.git
+cd on-demand-server
+```
+````
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the server
+
+```bash
+npm run dev
+# or
+node index.js
+```
+
+> The server will run at: `http://localhost:3000`
+
+---
+
+## 🧪 Using `request.http`
+
+1. Install the **REST Client** extension on VS Code.
+2. Start this backend server.
+3. Open the `request.http` file.
+4. Click **"Send Request"** above any block to test the endpoint and see mock responses.
+
+---
+
+## 🔗 API List & Description
 
 | Method | Endpoint                    | Description                       |
 | ------ | --------------------------- | --------------------------------- |
@@ -24,7 +61,35 @@ This project provides mock APIs to support frontend mobile app development and t
 | GET    | `/api/v1/user/transactions` | Get user transaction history      |
 | POST   | `/api/v1/user/withdraw`     | Submit withdrawal request         |
 
-**🔐 All `/user/*` endpoints require `Authorization: Bearer <token>`**
+> **🔐 All `/user/*` endpoints require `Authorization: Bearer <token>`**
+
+---
+
+## 📁 Folder Structure
+
+```
+/data           # Mock user & balance data (JSON)
+├── creditBalance.json
+├── otpEntries.json
+├── user.json
+
+/utils          # Helper functions (read/write json, OTP utils, etc.)
+├── auth.js
+├── otpUtils.js
+├── tokenUtils.js
+├── userUtils.js
+
+index.js        # Express server with route handlers
+request.http    # Sample API request file (for VSCode REST Client)
+```
+
+---
+
+## ⚙️ Notes
+
+- This is **not a production backend**. It’s intended for rapid prototyping and mobile integration testing.
+- OTPs are stored and handled in-memory (via JSON).
+- No actual SMS/OTP provider is integrated.
 
 ---
 
