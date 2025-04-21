@@ -6,7 +6,7 @@ This project provides mock APIs to support frontend mobile app development and t
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Clone the project
 ```
@@ -27,7 +27,7 @@ node index.js
 
 ---
 
-## 🧪 Using `request.http`
+##  Using `request.http`
 
 1. Install the **REST Client** extension on VS Code.
 2. Start this backend server.
@@ -36,7 +36,7 @@ node index.js
 
 ---
 
-## 🔗 API List & Description
+##  API List & Description
 
 | Method | Endpoint                    | Description                       |
 | ------ | --------------------------- | --------------------------------- |
@@ -47,11 +47,11 @@ node index.js
 | GET    | `/api/v1/user/transactions` | Get user transaction history      |
 | POST   | `/api/v1/user/withdraw`     | Submit withdrawal request         |
 
-> **🔐 All `/user/*` endpoints require `Authorization: Bearer <token>`**
+> ** All `/user/*` endpoints require `Authorization: Bearer <token>`**
 
 ---
 
-## 📁 Folder Structure
+##  Folder Structure
 
 ```
 /data           # Mock user & balance data (JSON)
@@ -71,7 +71,7 @@ request.http    # Sample API request file (for VSCode REST Client)
 
 ---
 
-## ⚙️ Notes
+##  Notes
 
 - This is **not a production backend**. It’s intended for rapid prototyping and mobile integration testing.
 - OTPs are stored and handled in-memory (via JSON).
