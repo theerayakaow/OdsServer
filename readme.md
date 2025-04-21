@@ -6,28 +6,34 @@ This project provides mock APIs to support frontend mobile app development and t
 
 ---
 
-##  Getting Started
+## Getting Started
 
 ### 1. Clone the project
+
 ```
 git clone https://github.com/theerayakaow/OdsServer.git
 cd OdsServer
 ```
+
 ### 2. Install dependencies
+
 ```
 npm install
 ```
+
 ### 3. Start the server
+
 ```
-npm run dev
+npm run start
 # or
-node index.js
+npm run dev
 ```
+
 > The server will run at: `http://localhost:3000`
 
 ---
 
-##  Using `request.http`
+## Using `request.http`
 
 1. Install the **REST Client** extension on VS Code.
 2. Start this backend server.
@@ -36,7 +42,7 @@ node index.js
 
 ---
 
-##  API List & Description
+## API List & Description
 
 | Method | Endpoint                    | Description                       |
 | ------ | --------------------------- | --------------------------------- |
@@ -51,7 +57,7 @@ node index.js
 
 ---
 
-##  Folder Structure
+## Folder Structure
 
 ```
 /data           # Mock user & balance data (JSON)
@@ -71,7 +77,7 @@ request.http    # Sample API request file (for VSCode REST Client)
 
 ---
 
-##  Notes
+## Notes
 
 - This is **not a production backend**. It’s intended for rapid prototyping and mobile integration testing.
 - OTPs are stored and handled in-memory (via JSON).
