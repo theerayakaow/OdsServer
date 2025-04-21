@@ -1,4 +1,4 @@
-# 🧪 On-Demand Salary - Mock Backend API
+# On-Demand Salary - Mock Backend API
 
 This project provides mock APIs to support frontend mobile app development and testing.
 
