@@ -10,8 +10,8 @@ This project provides mock APIs to support frontend mobile app development and t
 
 ### 1. Clone the project
 ```
-git clone https://github.com/your-username/on-demand-server.git
-cd on-demand-server
+git clone https://github.com/theerayakaow/OdsServer.git
+cd OdsServer
 ```
 ### 2. Install dependencies
 ```
