@@ -1,4 +1,4 @@
-# On-Demand Salary - Mobile Client
+# On-Demand Salary - Mock Backend API
 
 Please **do not make any changes directly on the `main` branch**.  
 If you're here to develop, follow the instructions below.
@@ -7,12 +7,12 @@ If you're here to develop, follow the instructions below.
 
 1. Clone the repository:
    ```
-   git clone https://github.com/theerayakaow/OdsClient.git
+   git clone https://github.com/theerayakaow/OdsServer.git
    ```
 
 2. Navigate into the project folder:
    ```
-   cd OdsClient
+   cd OdsServer
    ```
 
 3. Switch to the `develop` branch:
