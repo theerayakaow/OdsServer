@@ -9,22 +9,20 @@ This project provides mock APIs to support frontend mobile app development and t
 ## 🚀 Getting Started
 
 ### 1. Clone the project
-
+```
 git clone https://github.com/your-username/on-demand-server.git
 cd on-demand-server
-
+```
 ### 2. Install dependencies
-
+```
 npm install
-
+```
 ### 3. Start the server
-
+```
 npm run dev
-
 # or
-
 node index.js
-
+```
 > The server will run at: `http://localhost:3000`
 
 ---
